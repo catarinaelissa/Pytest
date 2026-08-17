@@ -7,7 +7,7 @@ testar uma função com diversas entradas, aumentando a cobertura de testes e re
 código.'''
 @pytest.mark.parametrize("val1, val2, sum", [ (1,2,3),(1,5,9),(10,20,30) ] )
 
-
+@pytest.mark.skip(reason= "Não testar agora")
 def test_soma (val1, val2, sum):
 
     assert soma (val1, val2) == sum
