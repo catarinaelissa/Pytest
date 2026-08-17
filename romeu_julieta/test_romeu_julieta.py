@@ -38,9 +38,14 @@ def test_romeu_e_julieta():
 
 
     '''Como executar os testes: 
-        pytest test_romeu_julieta.py -v // 
-        ''coverage''
-        pytest test_romeu_julieta.py -v --cov=romeu_julieta 
+        pip install pytest
+        pip install pytest-cov
+        ///
+        pytest test_romeu_julieta.py -v 
+        /// 
+        ''coverage html - python3 -m http.server 8080''
+        pytest test_romeu_julieta.py -v --cov=pasta_do_teste 
         ou 
-        pytest test_romeu_julieta.py -v --cov=. quando o teste está dentro do mesmo arquivo
+        pytest test_romeu_julieta.py -v --cov=. 
+        (Quando o teste está dentro do mesmo arquivo)
     '''
